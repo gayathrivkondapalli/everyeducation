@@ -1,0 +1,173 @@
+.send-help-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.send-help-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.send-help-header h3 {
+  margin: 0;
+  color: #1e293b;
+  flex: 1;
+}
+
+.send-help-header .info {
+  color: #64748b;
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 0;
+}
+
+.send-all-btn {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.send-all-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.no-stressed {
+  text-align: center;
+  padding: 40px;
+  background: #f0fdf4;
+  border-radius: 12px;
+  border: 2px dashed #86efac;
+}
+
+.no-stressed .success-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.no-stressed p {
+  color: #166534;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.stressed-students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stressed-student-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.stressed-student-card:hover {
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+.student-avatar.stressed {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.student-details {
+  flex: 1;
+}
+
+.student-details h4 {
+  margin: 0 0 4px 0;
+  color: #1e293b;
+}
+
+.student-details .student-id {
+  margin: 0 0 8px 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.stress-indicators {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stress-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.mood-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.help-btn {
+  background: linear-gradient(135deg, #ec4899, #ef4444);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.help-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+}
+
+.help-btn.notified {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.help-btn:disabled {
+  cursor: default;
+  opacity: 0.9;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+.error {
+  color: #ef4444;
+}

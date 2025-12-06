@@ -1,0 +1,91 @@
+/* Stress Heatmap Styles */
+.heatmap-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.heatmap-container h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+.heatmap-legend {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.heatmap-cell {
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.heatmap-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cell-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.cell-stress {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .heatmap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .heatmap-cell {
+    padding: 12px;
+  }
+
+  .cell-name {
+    font-size: 11px;
+  }
+
+  .cell-stress {
+    font-size: 16px;
+  }
+}
